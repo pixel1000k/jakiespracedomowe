@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kalkulator pola i objętości torusa</title>
+  <link rel="stylesheet" href="css.css">
+</head>
+<body>
+  <h1>Kalkulator pola i objętości torusa</h1>
+  <form action="#">
+    <label for="promienDuzy">Promień dużego koła torusa:</label>
+    <input type="number" id="promienDuzy" name="promienDuzy" required>
+    <br>
+    <label for="promienMaly">Promień małego koła torusa:</label>
+    <input type="number" id="promienMaly" name="promienMaly" required>
+    <br>
+    <button type="submit">Oblicz</button>
+  </form>
+  <div id="wyniki">
+    <h2>Wyniki</h2>
+    <p class="wynik">Pole powierzchni torusa: <span id="polePowierzchni"></span></p>
+    <p class="wynik">Objętość torusa: <span id="objętość"></span></p>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
